@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Embedded Site</title>
+</head>
+<body>
+    <div id="embed-container"></div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Use jQuery to fetch the content from the target site and embed it in the container div.
+            $.get('https://example.com', function(data) {
+                $('#embed-container').html(data);
+            });
+        });
+    </script>
+</body>
+</html>
